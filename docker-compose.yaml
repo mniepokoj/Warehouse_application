@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./backend/zti_project  # Ścieżka do katalogu zawierającego Dockerfile dla backendu
+      dockerfile: Dockerfile
+    ports:
+      - "8086:8086"  # Mapowanie portu hosta na port kontenera backendu
+
+  frontend:
+    build:
+      context: ./frontend  # Ścieżka do katalogu zawierającego Dockerfile dla frontendu
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Mapowanie portu hosta na port kontenera frontendu
+    depends_on:
+      - backend  # Zależność od usługi backendu
+      
