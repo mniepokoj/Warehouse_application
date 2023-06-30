@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="gitignore2" pattern="(gitignore||src:*..*)&amp;&amp;!src:zti_project.Aspect..*" />
+</component>

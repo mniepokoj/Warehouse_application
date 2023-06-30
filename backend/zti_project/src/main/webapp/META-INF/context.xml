@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource name="jdbc/postgres"
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="org.postgresql.Driver"
+              url="jdbc:postgresql://balarama.db.elephantsql.com:5432/asnekujv"
+              username="asnekujv"
+              password="wkTiEcQt6E4Yb2fL3QPNYzMJmLIpfF2H"
+              maxTotal="1"
+              maxIdle="1"
+              maxWaitMillis="-1"/>
+</Context>
