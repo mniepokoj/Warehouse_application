@@ -2,7 +2,7 @@
 FROM node
 
 # Ustalamy katalog roboczy w kontenerze
-WORKDIR /warehouse-app
+WORKDIR /app
 
 # Kopiujemy pliki aplikacji do kontenera
 COPY warehouse-app .
